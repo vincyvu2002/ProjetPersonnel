@@ -61,32 +61,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="330688623124708" title="Lent">
-            <sub-events>
-                <event-block sid="675181463063281">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="540855624627865" type="System">
-                            <param id="0" name="Interval (seconds)">0.8</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="3" name="Set deceleration" sid="797196945708718" type="MarcLent1">
-                            <param id="0" name="Deceleration">1000</param>
-                        </action>
-                        <action behavior="Platform" id="2" name="Set acceleration" sid="141675844563631" type="Camera">
-                            <param id="0" name="Acceleration">1000</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="767425055560291" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="416895957809198" type="System">
-                            <param id="0" name="Group name">&quot;Lent&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-block sid="601779161032101">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="897283604694676" type="MarcLent1">
@@ -462,9 +436,9 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="916847583238279" type="Audio">
-                            <param id="0" name="Audio file">Boire</param>
+                            <param id="0" name="Audio file">BoireBon</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">25</param>
+                            <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="613679539899875" type="MarcLent1">
@@ -1247,9 +1221,11 @@
                 <condition id="-4" name="Trigger once while true" sid="319639474455525" type="System" />
             </conditions>
             <actions>
-                <action id="-12" name="Set group active" sid="112558012534694" type="System">
-                    <param id="0" name="Group name">&quot;Lent&quot;</param>
-                    <param id="1" name="State">1</param>
+                <action behavior="Platform" id="1" name="Set max speed" sid="878727413588025" type="MarcLent1">
+                    <param id="0" name="Max Speed">100</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="201493815435025" type="Camera">
+                    <param id="0" name="Max Speed">100</param>
                 </action>
             </actions>
         </event-block>
