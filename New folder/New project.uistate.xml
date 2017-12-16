@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="9">Jeu Jour 2</layout>
+        <layout order="1">Menu</layout>
+        <layout order="3">Jeu Jour 1</layout>
+        <layout order="5">Transition Jour 1 à Jour 2</layout>
+        <layout order="7">Continuer à partie 2</layout>
+        <event-sheet order="2">Event sheet 2</event-sheet>
+        <event-sheet order="4">Event sheet 1</event-sheet>
+        <event-sheet order="6">Event sheet 4</event-sheet>
+        <event-sheet active="1" order="0">Event sheet 3</event-sheet>
+        <event-sheet order="8">Event sheet 5</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/PlatformeTemp/" />
+        <folder expanded="1" path="animation-folder/TheNeedleBedroomMorning/" />
+        <folder expanded="1" path="animation-folder/Marc/" />
+        <folder expanded="1" path="animation-folder/MurInvisible/" />
+        <folder expanded="1" path="animation-folder/MurNoire/" />
+        <folder expanded="1" path="animation-folder/MurNoire2/" />
+        <folder expanded="1" path="animation-folder/ChambreàCoucher/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation/" />
+        <folder expanded="1" path="animation-folder/TheNeedleHall/" />
+        <folder expanded="1" path="animation-folder/SalleDeBain/" />
+        <folder expanded="1" path="animation-folder/MurNoire3/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Touche_i3/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation2/" />
+        <folder expanded="1" path="animation-folder/Cuisine/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation3/" />
+        <folder expanded="1" path="animation-folder/Touche_i4/" />
+        <folder expanded="1" path="animation-folder/ChambreàManger/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation4/" />
+        <folder expanded="1" path="animation-folder/Touche_i5/" />
+        <folder expanded="1" path="animation-folder/ChambrePrincipale/" />
+        <folder expanded="1" path="animation-folder/AvertMur1/" />
+        <folder expanded="1" path="animation-folder/MarcVisage/" />
+        <folder expanded="1" path="animation-folder/MarcTexte/" />
+        <folder expanded="1" path="animation-folder/Touche_i6/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation5/" />
+        <folder expanded="1" path="animation-folder/FadeToBlack/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/MarcCycleDeMarche/" />
+        <folder expanded="1" path="animation-folder/Bouton_Jouer/" />
+        <folder expanded="1" path="animation-folder/BoîteàDîner/" />
+        <folder expanded="1" path="animation-folder/AvertMur2/" />
+        <folder expanded="1" path="animation-folder/Touche_i/" />
+        <folder expanded="1" path="animation-folder/Flèches/" />
+        <folder expanded="1" path="animation-folder/Tutoriel_p1/" />
+        <folder expanded="1" path="animation-folder/iTutoriel/" />
+        <folder expanded="1" path="animation-folder/Flèche/" />
+        <folder expanded="1" path="animation-folder/EntréeàLaMaison/" />
+        <folder expanded="1" path="animation-folder/Extérieur/" />
+        <folder expanded="1" path="animation-folder/Extérieur1Dessus/" />
+        <folder expanded="1" path="animation-folder/Exérieur/" />
+        <folder expanded="1" path="animation-folder/Extérieur2Dessus/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/CouloirDécole/" />
+        <folder expanded="1" path="animation-folder/AvertMur3/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation6/" />
+        <folder expanded="1" path="animation-folder/Touche_i7/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation7/" />
+        <folder expanded="1" path="animation-folder/Touche_i8/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation8/" />
+        <folder expanded="1" path="animation-folder/Touche_i9/" />
+        <folder expanded="1" path="animation-folder/Classe/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation9/" />
+        <folder expanded="1" path="animation-folder/Touche_i10/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation10/" />
+        <folder expanded="1" path="animation-folder/Touche_i11/" />
+        <folder expanded="1" path="animation-folder/Barrière/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation11/" />
+        <folder expanded="1" path="animation-folder/Touche_i12/" />
+        <folder expanded="1" path="animation-folder/Touche_i13/" />
+        <folder expanded="1" path="animation-folder/AvertMur4/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation12/" />
+        <folder expanded="1" path="animation-folder/Touche_i2/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation13/" />
+        <folder expanded="1" path="animation-folder/Touche_i14/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation14/" />
+        <folder expanded="1" path="animation-folder/Touche_i15/" />
+        <folder expanded="1" path="animation-folder/ChambreàCoucherNuit/" />
+        <folder expanded="1" path="animation-folder/Transition/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/MarcLent1/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation15/" />
+        <folder expanded="1" path="animation-folder/Touche_i16/" />
+        <folder expanded="1" path="animation-folder/AvertMur5/" />
+        <folder expanded="1" path="animation-folder/Obj_Activation16/" />
+        <folder expanded="1" path="animation-folder/Touche_i17/" />
+        <folder expanded="1" path="animation-folder/AvertMur6/" />
+        <folder expanded="1" path="animation-folder/AvertMur7/" />
+        <folder expanded="1" path="animation-folder/AvertMur8/" />
+        <folder expanded="1" path="animation-folder/MarcLent2/" />
+        <folder expanded="1" path="animation-folder/ContinueràPartie/" />
+    </folders-expanded>
+</c2uistate>

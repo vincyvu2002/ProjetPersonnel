@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>pn6oppjxf5j1</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>809</width>
+        <height>450</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="PlatformeTemp" sid="378724706076062">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789973109241552" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Platforme Temp.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="779875802802235">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TheNeedleBedroomMorning" sid="201800898846560">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="912891582320956" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\The Needle Bedroom morning.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Marc" sid="787014280543232">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="929505365452247">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="261568274812259">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Animation_Immobile_D" pingpong="0" repeatcount="1" repeatto="0" sid="669362632817022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Immobile Droite.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.1875" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.75" y="0.15625" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.6" y="0.75" />
+                            <point x="0.604167" y="0.914285" />
+                            <point x="0.429167" y="0.916667" />
+                            <point x="0.4" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Animation_Immobile_G" pingpong="0" repeatcount="1" repeatto="0" sid="924780716291216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.6" y="0.5" />
+                            <point x="0.5875" y="0.916666" />
+                            <point x="0.395833" y="0.916666" />
+                            <point x="0.4" y="0.75" />
+                            <point x="0.375" y="0.5" />
+                            <point x="0.25" y="0.15625" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.7" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="Animation_Marche_D" pingpong="0" repeatcount="1" repeatto="0" sid="498590879702446" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Marche 1.png">
+                        <collision-poly>
+                            <point x="0.325" y="0.203125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.725" y="0.171875" />
+                            <point x="0.745833" y="0.303386" />
+                            <point x="0.627083" y="0.397787" />
+                            <point x="0.741667" y="0.67448" />
+                            <point x="0.641667" y="0.692709" />
+                            <point x="0.725" y="0.916666" />
+                            <point x="0.545833" y="0.916667" />
+                            <point x="0.308333" y="0.916666" />
+                            <point x="0.375" y="0.700521" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Marche 2.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.1875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.75" y="0.15625" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.654167" y="0.911904" />
+                            <point x="0.345833" y="0.878571" />
+                            <point x="0.204167" y="0.877827" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Marche 3.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.1875" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.75" y="0.15625" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.595833" y="0.914285" />
+                            <point x="0.3875" y="0.892857" />
+                            <point x="0.4" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Marche 4.png">
+                        <collision-poly>
+                            <point x="0.325" y="0.203125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.725" y="0.171875" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.7" y="0.916666" />
+                            <point x="0.345833" y="0.921428" />
+                            <point x="0.425" y="0.734375" />
+                            <point x="0.4" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Marche 5.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.1875" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.725" y="0.171875" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.6" y="0.75" />
+                            <point x="0.554167" y="0.916667" />
+                            <point x="0.304167" y="0.880952" />
+                            <point x="0.4" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Character Walking Animation\Marc Marche 6.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.1875" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.75" y="0.15625" />
+                            <point x="0.65" y="0.5" />
+                            <point x="0.65" y="0.8125" />
+                            <point x="0.525" y="0.914285" />
+                            <point x="0.425" y="0.916666" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="Animation_Marche_G" pingpong="0" repeatcount="1" repeatto="0" sid="680789691931409" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.625" y="0.700521" />
+                            <point x="0.691667" y="0.916666" />
+                            <point x="0.454167" y="0.916667" />
+                            <point x="0.275" y="0.916666" />
+                            <point x="0.358333" y="0.692709" />
+                            <point x="0.258333" y="0.67448" />
+                            <point x="0.372917" y="0.397787" />
+                            <point x="0.254167" y="0.303386" />
+                            <point x="0.275" y="0.171875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.675" y="0.203125" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.795833" y="0.877827" />
+                            <point x="0.654167" y="0.878571" />
+                            <point x="0.345833" y="0.911904" />
+                            <point x="0.35" y="0.5" />
+                            <point x="0.25" y="0.15625" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.7" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.6" y="0.5" />
+                            <point x="0.6125" y="0.892857" />
+                            <point x="0.404167" y="0.914285" />
+                            <point x="0.4" y="0.5" />
+                            <point x="0.25" y="0.15625" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.7" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.6" y="0.5" />
+                            <point x="0.575" y="0.734375" />
+                            <point x="0.654167" y="0.921428" />
+                            <point x="0.3" y="0.916666" />
+                            <point x="0.4" y="0.5" />
+                            <point x="0.275" y="0.171875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.675" y="0.203125" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.6" y="0.5" />
+                            <point x="0.695833" y="0.880952" />
+                            <point x="0.445833" y="0.916667" />
+                            <point x="0.4" y="0.75" />
+                            <point x="0.4" y="0.5" />
+                            <point x="0.275" y="0.171875" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.7" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.575" y="0.916666" />
+                            <point x="0.475" y="0.914285" />
+                            <point x="0.35" y="0.8125" />
+                            <point x="0.35" y="0.5" />
+                            <point x="0.25" y="0.15625" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.7" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurInvisible" sid="810463681583546">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="531893988866967">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185595019407227" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurNoire" sid="298498643115626">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767909072779528" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurNoire2" sid="499437044028504">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372187777799056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TheNeedleBedroomMorning2" sid="703709207955740">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777154915706317" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\The Needle Bedroom morning.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touche_i" sid="498025617636841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Statique" pingpong="0" repeatcount="1" repeatto="0" sid="684361174359485" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\Touche i.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Suggération" pingpong="0" repeatcount="1" repeatto="0" sid="969850748348398" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Obj_Activation" sid="241025169973666">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745582323435166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TheNeedleHall" sid="996455163579037">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505088750095817" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vincent\Desktop\The Needle\The Needle Hall.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="278652336843962">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245449291145067" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="608477716627781">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="675485584975450" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touche_i2" sid="317227470915987">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621350425999367" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="Suggération" pingpong="0" repeatcount="1" repeatto="0" sid="780029392466228" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Obj_Activation2" sid="664639381786957">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437740737182369" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

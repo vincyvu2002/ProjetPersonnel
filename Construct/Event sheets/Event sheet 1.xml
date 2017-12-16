@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="941031265727684" title="Mouvement PP" />
+        <event-block sid="830889937701175">
+            <conditions>
+                <condition id="2" name="Key is down" sid="714938421490790" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="594820264647358" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Marche_D&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="892495239135821">
+            <conditions>
+                <condition id="2" name="Key is down" sid="473723763667179" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="694079766140571" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Marche_G&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494141763528977">
+            <conditions>
+                <condition id="3" name="On key released" sid="701606332079864" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="582358535317145" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Immobile_D&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="124580841638064">
+            <conditions>
+                <condition id="3" name="On key released" sid="968896822280967" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="330453306454102" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Immobile_G&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="513624585086584" title="Portes" />
+        <event-block sid="217050388239726">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="121158063315662" type="Marc">
+                    <param id="0" name="Object">Obj_Activation</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="170134232473576" type="Touche_i">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="471496540450009">
+            <conditions>
+                <condition id="3" name="On key released" sid="453419353715910" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="177435281649518" type="Marc">
+                    <param id="0" name="Object">Obj_Activation</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="956221437135607" type="Marc">
+                    <param id="0" name="X">1400</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+                <action id="-3" name="Set position" sid="208252658897452" type="Camera">
+                    <param id="0" name="X">1400</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="810229833477214">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="887019775420295" type="Marc">
+                    <param id="0" name="Object">Obj_Activation2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="120744553422167" type="Touche_i3">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="961907809001995">
+            <conditions>
+                <condition id="3" name="On key released" sid="117213391782022" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="225765597807938" type="Marc">
+                    <param id="0" name="Object">Obj_Activation2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="875326803068517" type="Camera">
+                    <param id="0" name="X">1113</param>
+                    <param id="1" name="Y">213</param>
+                </action>
+                <action id="-3" name="Set position" sid="292939430560670" type="Marc">
+                    <param id="0" name="X">1104</param>
+                    <param id="1" name="Y">280</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316060882191919">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="441077856997988" type="Marc">
+                    <param id="0" name="Object">Obj_Activation3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="645511288342883" type="Touche_i4">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="351747597572846">
+            <conditions>
+                <condition id="3" name="On key released" sid="453462997571177" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="658920094811245" type="Marc">
+                    <param id="0" name="Object">Obj_Activation3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="696602783318918" type="Camera">
+                    <param id="0" name="X">2250</param>
+                    <param id="1" name="Y">650</param>
+                </action>
+                <action id="-3" name="Set position" sid="163911364696988" type="Marc">
+                    <param id="0" name="X">2250</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="714293273665964">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="524732461537192" type="Marc">
+                    <param id="0" name="Object">Obj_Activation4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="478233113237924" type="Touche_i5">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668194940820498">
+            <conditions>
+                <condition id="3" name="On key released" sid="415179747647523" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="804470930773161" type="Marc">
+                    <param id="0" name="Object">Obj_Activation4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="904351314801907" type="Camera">
+                    <param id="0" name="X">2428</param>
+                    <param id="1" name="Y">215</param>
+                </action>
+                <action id="-3" name="Set position" sid="210572063520175" type="Marc">
+                    <param id="0" name="X">2420</param>
+                    <param id="1" name="Y">282</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="835472967566508" title="Histoire" />
+        <event-block sid="493422393312116">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="508539697086556" type="Marc">
+                    <param id="0" name="Object">AvertMur1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="778678507972085" type="AvertMsg1">
+                    <param id="0" name="Y">15</param>
+                </action>
+                <action id="-16" name="Wait" sid="860333836966472" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-2" name="Set Y" sid="571654905618998" type="AvertMsg1">
+                    <param id="0" name="Y">-50</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

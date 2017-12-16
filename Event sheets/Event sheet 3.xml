@@ -1,0 +1,1257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <variable constant="0" name="ToiletteCheck1" sid="502454377040595" static="0" type="number">0</variable>
+        <variable constant="0" name="BoireCheck1" sid="378406137297897" static="0" type="number">0</variable>
+        <event-group description="" sid="590192830628625" title="Mouvement PP2">
+            <sub-events>
+                <event-block sid="242869683614503">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="590006080150797" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="282614687518740" type="MarcLent1">
+                            <param id="0" name="Animation">&quot;Animation_Marche_D&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="464918641480751">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="218602648194205" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="917475631456421" type="MarcLent1">
+                            <param id="0" name="Animation">&quot;Animation_Marche_G&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="770844176271674">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="800037417939568" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="961551340765453" type="MarcLent1">
+                            <param id="0" name="Animation">&quot;Animation_Immobile_D&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="753168436034131">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="658802619379049" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="133544836447602" type="MarcLent1">
+                            <param id="0" name="Animation">&quot;Animation_Immobile_G&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="330688623124708" title="Lent">
+            <sub-events>
+                <event-block sid="675181463063281">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="540855624627865" type="System">
+                            <param id="0" name="Interval (seconds)">0.8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="797196945708718" type="MarcLent1">
+                            <param id="0" name="Deceleration">1000</param>
+                        </action>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="141675844563631" type="Camera">
+                            <param id="0" name="Acceleration">1000</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="767425055560291" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="416895957809198" type="System">
+                            <param id="0" name="Group name">&quot;Lent&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="601779161032101">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="897283604694676" type="MarcLent1">
+                    <param id="0" name="Object">AvertMur1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="112189494723105" type="AvertMsg">
+                    <param id="0" name="Text">&quot;J&apos;ai besoin d&apos;aller aux toilettes. Ça presse.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="225751874950486" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-16" name="Wait" sid="804943575269407" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="0" name="Set text" sid="961952502643452" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="685469692560253">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="166885481653144" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="605976726309803" type="Touche_i">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="244431895289814">
+            <conditions>
+                <condition id="3" name="On key released" sid="118083053200892" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="410651491761356" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="864912159444364" type="Camera">
+                    <param id="0" name="X">1400</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+                <action id="-3" name="Set position" sid="267828382791776" type="MarcLent1">
+                    <param id="0" name="X">1400</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="718130056874793">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="940897064418296" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="390033557116725" type="Touche_i6">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="612876608330113">
+            <conditions>
+                <condition id="3" name="On key released" sid="488211237741419" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="289130389952775" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="377219823311581" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Je devrais prendre une douche, mais je suis trop fatigué.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="786859445069758" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="0" name="Set text" sid="837852652586483" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="160915366382501">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="600142259989165" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="715110230916221" type="Touche_i16">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="212806812593410">
+            <conditions>
+                <condition id="3" name="On key released" sid="122400258506031" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="128009987831239" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="622982043004578" type="Obj_Activation15">
+                    <param id="0" name="Y">-150</param>
+                </action>
+                <action id="-9" name="Destroy" sid="501337132687211" type="AvertMur1" />
+                <action id="0" name="Play" sid="727726762795053" type="Audio">
+                    <param id="0" name="Audio file">Toilette</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="395222001047870" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="936361547279742" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="105576625326370" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="349148455072357" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="691431255843208" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="368870222836181" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="517771356987217" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="621036320066012" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="966988408661387" type="FadeToBlack">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-2" name="Set Y" sid="742158599613798" type="AvertMur8">
+                    <param id="0" name="Y">-150</param>
+                </action>
+                <action id="-16" name="Wait" sid="954337271430817" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="282074474740197" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="855169252786140" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="188122873752262" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="901271480277048" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="139873159458758" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="565520187061293" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="279279982973079" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="590644089758395" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="871138336942644" type="FadeToBlack">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="6" name="Stop" sid="131060362041234" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="580995822425455" type="System">
+                    <param id="0" name="Variable">ToiletteCheck1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="581192629342834">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="503550581393631" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="908797949127181" type="Touche_i4">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="434919990680942">
+            <conditions>
+                <condition id="3" name="On key released" sid="670179127755699" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="504443110784459" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="159602226806592" type="Camera">
+                    <param id="0" name="X">2250</param>
+                    <param id="1" name="Y">650</param>
+                </action>
+                <action id="-3" name="Set position" sid="975765767506566" type="MarcLent1">
+                    <param id="0" name="X">2250</param>
+                    <param id="1" name="Y">700</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="746552404465054">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="680588389463537" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="170764384705026" type="Touche_i5">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="244609062246664">
+            <conditions>
+                <condition id="3" name="On key released" sid="875675669236680" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="878328426311629" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="309403274721196" type="Camera">
+                    <param id="0" name="X">2428</param>
+                    <param id="1" name="Y">215</param>
+                </action>
+                <action id="-3" name="Set position" sid="595595936628644" type="MarcLent1">
+                    <param id="0" name="X">2420</param>
+                    <param id="1" name="Y">282</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921334375101233">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="877965234686273" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="158924720797445" type="Touche_i7">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="587821605249614">
+            <conditions>
+                <condition id="3" name="On key released" sid="562997808851236" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="901341410868256" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="736371371075354" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Je n&apos;ai que soif, pas faim.&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="434655716729759" type="Obj_Activation16">
+                    <param id="0" name="X">2227.5</param>
+                    <param id="1" name="Y">230</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="229338427922763">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="405501525690783" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="406689015688017" type="Touche_i3">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="426158232702829">
+            <conditions>
+                <condition id="3" name="On key released" sid="711477667095993" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="702693770537635" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="264827061591995" type="Camera">
+                    <param id="0" name="X">1113</param>
+                    <param id="1" name="Y">213</param>
+                </action>
+                <action id="-3" name="Set position" sid="407368822787168" type="MarcLent1">
+                    <param id="0" name="X">1104</param>
+                    <param id="1" name="Y">280</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="943378218011461">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="855062283507108" type="MarcLent1">
+                    <param id="0" name="Object">AvertMur5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="326320140785432" type="AvertMsg">
+                    <param id="0" name="Text">&quot;J&apos;ai trop soif; je dois boire de l&apos;eau avant de partir pour&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="204013885890742" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;l&apos;école... Il y a de l&apos;eau au lavabo.&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="635291180366026" type="Obj_Activation16">
+                    <param id="0" name="X">2227.5</param>
+                    <param id="1" name="Y">230</param>
+                </action>
+                <action id="-16" name="Wait" sid="958256281257958" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="0" name="Set text" sid="857531522648926" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="425955364976816" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="937543625497518">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="447160289656153" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation16</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="732202004186903" type="Touche_i17">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="827187634283487" title="Boire">
+            <sub-events>
+                <event-block sid="950998472921508">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="558798069590961" type="Keyboard">
+                            <param id="0" name="Key">73 (I)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="887216979813024" type="MarcLent1">
+                            <param id="0" name="Object">Obj_Activation16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="916847583238279" type="Audio">
+                            <param id="0" name="Audio file">Boire</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">25</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="613679539899875" type="MarcLent1">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="163538331637993" type="Camera">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="898445613163246" type="System">
+                            <param id="0" name="Group name">&quot;Mouvement PP2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="948021805887687" type="System">
+                            <param id="0" name="Variable">BoireCheck1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="941468214007462" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="904903723939012" type="System">
+                            <param id="0" name="Group name">&quot;Mouvement PP2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="996651217230993" type="MarcLent1">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="570837203438183" type="Camera">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="630087071172277" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="498342414632002">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="193265849767010" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="530503960537320" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-12" name="Set group active" sid="721785447506580" type="System">
+                    <param id="0" name="Group name">&quot;Boire&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="188518881988030" type="AvertMur5" />
+                <action id="-2" name="Set Y" sid="481035079758616" type="Obj_Activation16">
+                    <param id="0" name="Y">-150</param>
+                </action>
+                <action id="0" name="Set text" sid="684719666712952" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Oof. Je dervrais me rendre à mon autobus.&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="248386389939897" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="563556650936228">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="546377514173510" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="720533604856432" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="892611890732216" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Encore un peu plus..&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="481470830352334" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="902331673248256">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="389950616333733" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="414922592828965" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="874168581844973" type="AvertMsg">
+                    <param id="0" name="Text">&quot;J&apos;ai toujours soif. Une dernière fois...&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="203373047798866" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="891429907050119">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="656350765913625" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="808133150677830" type="Touche_i8">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="313329869425647">
+            <conditions>
+                <condition id="3" name="On key released" sid="142217272579775" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="295437940652793" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="514824132358864" type="Audio">
+                    <param id="0" name="Audio file">AutobusG</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="557183969480536" type="Obj_Activation7">
+                    <param id="0" name="Y">-150</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="656422669390469" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="892633716911459" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="624814900893554" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="347179633432042" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="787541575025574" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="732094506319646" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="823360440240707" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="543733823344151" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="661285588303500" type="FadeToBlack">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-1" name="Set X" sid="843529479277438" type="MarcLent1">
+                    <param id="0" name="X">5565</param>
+                </action>
+                <action id="-3" name="Set position" sid="681330230758945" type="Camera">
+                    <param id="0" name="X">5565</param>
+                    <param id="1" name="Y">215</param>
+                </action>
+                <action id="-16" name="Wait" sid="435709885092371" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="105742591371098" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="845846651157977" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="618890223336462" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="745492145088947" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="802548297575379" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="411190246598717" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="174831283798841" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="831436735494064" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="876311044524153" type="FadeToBlack">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="6" name="Stop" sid="364207885051868" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="676579753329195" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Je crois que j&apos;ai mon cours de maths en première&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="125040076163607" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;période encore.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="627031246250852" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="0" name="Set text" sid="306024099127295" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="683353877887094" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="305371066264886" type="AvertMur8">
+                    <param id="0" name="Y">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="350878755615903">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="195191557878067" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="808274415272457" type="Touche_i9">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="332404988339909">
+            <conditions>
+                <condition id="3" name="On key released" sid="203614995517005" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="746533848954952" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="377290764643975" type="MarcLent1">
+                    <param id="0" name="X">7675</param>
+                    <param id="1" name="Y">696</param>
+                </action>
+                <action id="-3" name="Set position" sid="357902030811196" type="Camera">
+                    <param id="0" name="X">7675</param>
+                    <param id="1" name="Y">680</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="338452070478443">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="918818713180180" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="457403469937364" type="Touche_i10">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="840456336099055">
+            <conditions>
+                <condition id="3" name="On key released" sid="974060787433581" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="200282311864675" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="439277240244858" type="MarcLent1">
+                    <param id="0" name="X">8068 </param>
+                    <param id="1" name="Y">280</param>
+                </action>
+                <action id="-3" name="Set position" sid="281766682281877" type="Camera">
+                    <param id="0" name="X">8068</param>
+                    <param id="1" name="Y">215</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="634372216882924">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="206080173834885" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="286796510657464" type="Touche_i11">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="994977680595256">
+            <conditions>
+                <condition id="3" name="On key released" sid="114573696936851" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="616234553344224" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="494212854707252" type="Audio">
+                    <param id="0" name="Audio file">Cloche Son</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="324406534845468" type="Barrière">
+                    <param id="0" name="Y">150</param>
+                </action>
+                <action id="-9" name="Destroy" sid="722321053332580" type="Touche_i9" />
+                <action id="-9" name="Destroy" sid="317749035103912" type="Obj_Activation8" />
+                <action id="-16" name="Set opacity" sid="844697014089463" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="374413057030867" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="471958872966582" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="156305830447377" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="478668127948429" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="793223986205891" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="195403364005346" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="234238915694097" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="271474496964115" type="FadeToBlack">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-3" name="Set position" sid="421377314068870" type="MarcLent1">
+                    <param id="0" name="X">6087</param>
+                    <param id="1" name="Y">240</param>
+                </action>
+                <action id="-3" name="Set position" sid="302575955026305" type="Camera">
+                    <param id="0" name="X">6124</param>
+                    <param id="1" name="Y">173</param>
+                </action>
+                <action id="-16" name="Wait" sid="551296508893425" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="377944107628254" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="230228617785353" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="395745817471701" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="323300434224335" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="897625135773919" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="114378941152363" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="937180486865686" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="807216629777105" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="396488668891509" type="FadeToBlack">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="6" name="Stop" sid="681863458746266" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="319425904435599" type="AvertMsg">
+                    <param id="0" name="Text">&quot;*soupir* Je suis tellement épuisé et faible. Je devrais&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="282527917955775" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;probablement me coucher première chose à la maison.&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="384031688848046" type="Obj_Activation11">
+                    <param id="0" name="Y">150</param>
+                </action>
+                <action id="-16" name="Wait" sid="947901106668631" type="System">
+                    <param id="0" name="Seconds">8</param>
+                </action>
+                <action id="0" name="Set text" sid="113734841430386" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="999799885987988" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="831660984085455">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="224595316180995" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="805451563064490" type="Touche_i13">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="609620205819845">
+            <conditions>
+                <condition id="3" name="On key released" sid="108621029726738" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="783536010053040" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="348102194706276" type="Audio">
+                    <param id="0" name="Audio file">AutobusG</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="517765889202759" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="607084749432674" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="476356600399752" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="359850944112939" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="167669614739545" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="447560197470264" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="277823611864763" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="825137603841843" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="383715979234526" type="FadeToBlack">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-1" name="Set X" sid="618714375006018" type="MarcLent1">
+                    <param id="0" name="X">5150</param>
+                </action>
+                <action id="-1" name="Set X" sid="902589806834869" type="Camera">
+                    <param id="0" name="X">5150</param>
+                </action>
+                <action id="-16" name="Wait" sid="401319828186890" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="473012221632015" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="317216716282015" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="204598455638399" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="949918546166920" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="888383600503176" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="688041869308949" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="557729964978269" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="924866099957477" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="932161020517698" type="FadeToBlack">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="6" name="Stop" sid="748642153639561" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="331973053491638" type="AvertMur7">
+                    <param id="0" name="Y">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="406200513962807">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="212056534016821" type="MarcLent1">
+                    <param id="0" name="Object">AvertMur7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="494397506560355" type="AvertMsg">
+                    <param id="0" name="Text">&quot;J&apos;ai tellement soif. Une gorgée d&apos;eau ne peut pas me&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="779474501559685" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;faire du mal...&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="717067637736137" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="0" name="Set text" sid="418253813142109" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="883777632401228" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="663619615391843" type="Obj_Activation16">
+                    <param id="0" name="Y">150</param>
+                </action>
+                <action id="-12" name="Set group active" sid="329099990097784" type="System">
+                    <param id="0" name="Group name">&quot;Boire&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="349445217780248">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="338598863625155" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="194497048006554" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-12" name="Set group active" sid="443170045235764" type="System">
+                    <param id="0" name="Group name">&quot;Boire&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="501525665547151" type="AvertMur7" />
+                <action id="-2" name="Set Y" sid="158989112889363" type="Obj_Activation16">
+                    <param id="0" name="Y">-150</param>
+                </action>
+                <action id="0" name="Set text" sid="187153003137888" type="AvertMsg">
+                    <param id="0" name="Text">&quot;C&apos;est bon maintenant.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="257659613645074" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="215486998050548" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="562398407564046">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="829197720790575" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="788415273359577" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="524768576396015" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Encore un peu plus..&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="217647578964647" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="234238486372410">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="470446723886466" type="MarcLent1">
+                    <param id="0" name="Object">AvertMur8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="393695269497871" type="AvertMsg">
+                    <param id="0" name="Text">&quot;Ça fait déjà 6 fois que je vais aux toilettes aujourd&apos;hui et&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="321832298213867" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;j&apos;ai toujours besoin d&apos;y aller? C&apos;est étrange...&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="410693746139844" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="710630636916796" type="AvertMsg">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="904086621573117" type="AvertMsg3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="309693614538459" type="Obj_Activation15">
+                    <param id="0" name="Y">684</param>
+                </action>
+                <action id="-2" name="Set Y" sid="390757265980373" type="Obj_Activation14">
+                    <param id="0" name="Y">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721692992863293">
+            <conditions>
+                <condition id="3" name="On key released" sid="134663945650830" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="918144373684255" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation15</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="693407714050248" type="System">
+                    <param id="0" name="Variable">BoireCheck1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="943568605410323" type="Obj_Activation15">
+                    <param id="0" name="Y">-150</param>
+                </action>
+                <action id="-3" name="Set position" sid="934740244292543" type="ChambreàCoucherNuit">
+                    <param id="0" name="X">405</param>
+                    <param id="1" name="Y">228</param>
+                </action>
+                <action id="-2" name="Set Y" sid="819500303896007" type="ChambreàCoucher">
+                    <param id="0" name="Y">-300</param>
+                </action>
+                <action id="-9" name="Destroy" sid="806955034039577" type="AvertMur8" />
+                <action id="0" name="Play" sid="359909282440528" type="Audio">
+                    <param id="0" name="Audio file">Toilette</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="331573744086832" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="935461448982256" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="741683745436342" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="844949219262966" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="112351610327903" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="593064447771592" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="944397870955282" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="448891406020546" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="666640518660117" type="FadeToBlack">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Wait" sid="914630889585633" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="607743696665698" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="611249077665630" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="871001104121014" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="448268699607260" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="486238066982732" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="551509769834541" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="180822574489802" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="578930485185702" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="127051353961541" type="FadeToBlack">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="6" name="Stop" sid="205742093050162" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="788953792730781">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="774074704162295" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="172423706144523" type="Touche_i15">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="231422527466338">
+            <conditions>
+                <condition id="3" name="On key released" sid="714835875343462" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="683520364027313" type="MarcLent1">
+                    <param id="0" name="Object">Obj_Activation14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="745527308258908" type="FadeToBlack">
+                    <param id="0" name="Opacity">20</param>
+                </action>
+                <action id="-16" name="Wait" sid="274545298079508" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="552427319886113" type="FadeToBlack">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="-16" name="Wait" sid="820641994619326" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="523052502798224" type="FadeToBlack">
+                    <param id="0" name="Opacity">60</param>
+                </action>
+                <action id="-16" name="Wait" sid="476560208368190" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="431166824409487" type="FadeToBlack">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="408357525480975" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="614362003345989" type="FadeToBlack">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Wait" sid="146099305584117" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="221672184646235" type="System">
+                    <param id="0" name="Layout">Continuer à partie 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="139806325543622">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="319639474455525" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="112558012534694" type="System">
+                    <param id="0" name="Group name">&quot;Lent&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

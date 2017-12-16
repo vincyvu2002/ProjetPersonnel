@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-group description="" sid="204611055411804" title="PP" />
+        <event-block sid="703541023932810">
+            <conditions>
+                <condition id="2" name="Key is down" sid="260389063826629" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="542392570930875" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Marche_D&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605238075853152">
+            <conditions>
+                <condition id="2" name="Key is down" sid="482424869794326" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="140426367790907" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Marche_G&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="911817236153919">
+            <conditions>
+                <condition id="3" name="On key released" sid="812257353911871" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="306431258407867" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Immobile_D&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="642417286092849">
+            <conditions>
+                <condition id="3" name="On key released" sid="328203481353383" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="435419047321722" type="Marc">
+                    <param id="0" name="Animation">&quot;Animation_Immobile_G&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="508361360298305">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="514521878404490" type="Marc">
+                    <param id="0" name="Object">Obj_Activation</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="784065074354230" type="Touche_i">
+                    <param id="0" name="Animation">&quot;Suggération&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="599167008172444">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="294196757275545" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="839209823811027" type="Marc">
+                    <param id="0" name="Object">Obj_Activation</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="619215545169446" type="System">
+                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
